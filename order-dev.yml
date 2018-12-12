@@ -18,7 +18,7 @@ PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  test222
+  git
 girl:
   name: lanlan
   age: 20
