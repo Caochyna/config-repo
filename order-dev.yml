@@ -12,3 +12,5 @@ spring:
     password: 123456
   jpa:
     show-sql: true
+env:
+  dev
