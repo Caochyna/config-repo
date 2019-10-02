@@ -17,8 +17,5 @@ spring:
     port: 5672
   jpa:
     show-sql: true
-  redis:
-    host: localhost
-    port: 6379
 env:
   dev
