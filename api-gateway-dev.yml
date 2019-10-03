@@ -8,5 +8,14 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/cql_springcloud?characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
-env:
-  dev
+zuul:
+  #全部服务忽略敏感头（全部服务都可传递cookie）
+  sensitive-headers: 
+  routes:
+    product:  /myProduct/**
+    #排除某些只供服务之间调用的路由。
+  ignored-patterns:
+    - /**/product/listForOrder
+#    myProduct:
+#      path: /myProduct/**
+#      serviceId: product
